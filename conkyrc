@@ -42,7 +42,7 @@ conky.text = [[
 	
 	${goto 20}${color #1AC2FF}TiME/DATE ${hr 2}$color
 
-	$alignc${voffset -2}${time %H:%M} Uhr - ${voffset -2}${time %d/%m/%y}  
+	$alignc${voffset -2}${time %H:%M} - ${voffset -2}${time %d/%m/%y}  
 	${hr}	
 	$alignc ${color red}System information $color
 	${goto 20}${color #1AC2FF}Processor ${hr 2}$color
