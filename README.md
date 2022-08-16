@@ -6,7 +6,7 @@
 -~ My current conky config [.EN] ~-
 
 
-![alt text](https://github.com/eCliZe88/MyConkyConfigEN/blob/Screenshot.PNG?raw=true)
+![Screenshot](Screenshot.png)
 
 
 I was annoyed because many configs didn't work for me. So I decided to make my own ✌️.
