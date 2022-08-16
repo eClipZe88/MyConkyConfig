@@ -1,4 +1,4 @@
-### :trollface:HEY THERE (●'◡'●) ###
+### face:HEY THERE :troll###
 
 
 
@@ -51,6 +51,9 @@ or use my start-conky.sh
 
 ### :point_up_2:PLEASE NOTE:point_up_2: ###
 If you have more than two cores then you have to add them manually. A sample is at line 60.
+
+
+ENJOY(●'◡'●) 
 
 
 
