@@ -1,0 +1,85 @@
+conky.config = {
+	background = true,
+	update_interval = 1.5,
+	cpu_avg_samples = 2,
+	net_avg_samples = 2,
+	out_to_console = false,
+	override_utf8_locale = true,
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 32768,
+	imlib_cache_size = 0,
+	own_window = true,
+	own_window_type = 'desktop',
+	own_window_argb_visual = true,
+	own_window_argb_value = 120,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	border_inner_margin = 10,
+	border_outer_margin = 0,
+	xinerama_head = 2,
+	alignment = 'bottom_right',
+	gap_x = 90,
+	gap_y = 90,
+	draw_shades = true,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	use_xft = true,
+	font = 'Ubuntu Mono:size=12',
+	xftalpha = 0.8,
+	uppercase = false,
+	default_color = '#FFFFFF',
+	own_window_colour = '#000000',
+	minimum_width = 0, minimum_height = 0,
+};
+conky.text = [[
+	${hr}
+
+	${image /home/insane/.conky/powered_by_linux.svg.png -p 30,35 -s 320x80}
+	${image /home/insane/.conky/anonymous.png -p 360,440 -s 65x65}
+
+
+	
+	${goto 20}${color #1AC2FF}TiME/DATE ${hr 2}$color
+
+	$alignc${voffset -2}${time %H:%M} Uhr - ${voffset -2}${time %d/%m/%y}  
+	${hr}	
+	$alignc ${color red}Systeminformationen $color
+	${goto 20}${color #1AC2FF}Prozessor ${hr 2}$color
+	${goto 20}${color grey}CPU-Architektur»$color $machine
+	${color grey}CPU-Taktrate»$color $freq_g GHz
+	${color grey}CPU-Auslastung»$color ${cpubar 12,100} $cpu%
+	${goto 20}${color #1AC2FF}Kerne ${hr 2}$color
+	$alignc${color grey}CPU0» ${cpu cpu0}% ${cpubar 7,80 cpu0} ${color grey}CPU1» ${cpu cpu1}% ${cpubar 7,80 cpu1}
+	${goto 20}${color #1AC2FF}Festplatte ${hr 2}$color
+	$color${fs_used /} von ${fs_size /} verwendet - ${fs_used_perc /}%
+	${fs_bar 12 /}
+	${goto 20}${color #1AC2FF}Hauptspeicher ${hr 2}$color
+	${goto 20}$mem von $memmax verwendet - $memperc%
+	${membar 12}
+	#${goto 20}CPU0: ${cpu cpu0}%${goto 100}${cpubar 7,80 cpu0} #${goto 222}CPU4: ${cpu cpu4}%${goto 302}${cpubar 7,80 cpu4}
+	#${goto 20}CPU1: ${cpu cpu1}%${goto 100}${cpubar 7,80 cpu1} #${goto 222}CPU5: ${cpu cpu5}%${goto 302}${cpubar 7,80 cpu5}
+	#${goto 20}CPU2: ${cpu cpu2}%${goto 100}${cpubar 7,80 cpu2} #${goto 222}CPU6: ${cpu cpu6}%${goto 302}${cpubar 7,80 cpu6}
+	#${goto 20}CPU3: ${cpu cpu3}%${goto 100}${cpubar 7,80 cpu3} #${goto 222}CPU7: ${cpu cpu7}%${goto 302}${cpubar 7,80 cpu7}
+	${goto 20}${hr}
+	${goto 20}${color #1AC2FF}Top 3 Prozesse ${hr 2}$color
+	${color grey}${goto 20}Name ${goto 200}Pid${goto 255}Cpu%${goto 310}Mem%${color}
+	${goto 20}${top name 1} ${goto 180}${top pid 1}${goto 235}${top cpu 1}${goto 290}${top mem 1}
+	${goto 20}${top name 2} ${goto 180}${top pid 2}${goto 235}${top cpu 2}${goto 290}${top mem 2}
+	${goto 20}${top name 3} ${goto 180}${top pid 3}${goto 235}${top cpu 3}${goto 290}${top mem 3}
+	${hr}
+	$alignc ${color red}Netzwerkinformationen $color
+	${goto 20}${color #1AC2FF}IP Adresse ${hr 2}$color
+	${goto 20}Network IP »${voffset -2} ${addrs enp0s3} 
+	${goto 20}Public IP » ${exec sh /home/insane/.conky/ip.sh}
+	## iF ip.sh fails you can use »» ${exec curl -s www.icanhazip.com} 
+	${goto 20}${color yellow}The Quieter You Become, The More You Are Able To Hear!${color}
+	${goto 20}${upspeedgraph enp0s3 30,178 06E9F8 2104FA}${goto 202}${downspeedgraph enp0s3 30,175 FFFF00 DD3A21}
+	${font FontAwesome}${goto 20}${font} ${upspeed enp3s0}${font FontAwesome}${goto 202}${font} ${downspeed enp3s0}
+	${hr}
+	${font FontAwesome}${font}${voffset -2}
+	${goto 20}${diskiograph_read 30,178 06E9F8 2104FA}${goto 202}${diskiograph_write 30,175 FFFF00 DD3A21}
+	${font FontAwesome}${goto 20}${font} ${diskio_read}${font FontAwesome}${goto 202}${font} ${diskio_write}
+	${hr}
+
+]];
