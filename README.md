@@ -19,6 +19,8 @@ You don't need to install any font in your system!
 
 I tested this config only on a virtual machine with Manjaro XFCE!
 
+The background on this screenshot is a blue kali dragon :)
+
 
 
 ### How to install? ###
