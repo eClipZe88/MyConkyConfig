@@ -41,11 +41,7 @@ sudo apt-get install conky-all
 
 :point_right: cp -rf anonymous.png powered_by_linux.svg.png ip.sh $HOME/.conky
 
-:point_right: change the path in .conkyrc 	
-- ${image /home/insane/.conky/powered_by_linux.svg.png -p 30,35 -s 320x80}
-- ${image /home/insane/.conky/anonymous.png -p 360,440 -s 65x65}
-- Public IP » ${exec sh /home/insane/.conky/ip.sh}
--> maybe you have to play with the resolutions.
+:point_right: -> maybe you have to play with the resolutions of the PNG files.
 
 :point_right: finally start conky 
 conky -c ~/.conkyrc & 
