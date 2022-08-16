@@ -17,7 +17,7 @@ It is just a simple conky config without a lot of extras but it's enough for me.
 
 You don't need to install any font in your system!
 
-I tested this config only on Manjaro XFCE!
+I tested this config only on a virtual machine with Manjaro XFCE!
 
 
 
@@ -54,7 +54,7 @@ or use my start-conky.sh
 
 ### :point_up_2:PLEASE NOTE:point_up_2: ###
 If you have more than two cores then you have to add them manually. A sample is at line 60.
-
+For a better look use a dock (e.g. plank) and move the (task)bar to the top of the screen.
 
 ENJOY(●'◡'●) 
 
