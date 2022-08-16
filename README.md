@@ -5,6 +5,8 @@
 
 -~ My current conky config [.EN] ~-
 
+:heavy_exclamation_mark:ENGLiSH VERSiON:heavy_exclamation_mark:
+
 
 ![Screenshot](Screenshot.png)
 
