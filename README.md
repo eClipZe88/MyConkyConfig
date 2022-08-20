@@ -33,7 +33,7 @@ Debian:
 sudo apt-get install conky-all
 
 
-:point_right: git clone https://github.com/eClipZe88/MyConkyConfigEN.git
+:point_right: git clone https://github.com/eClipZe88/MyConkyConfig.git
 
 :point_right: cd MyConkyConf
 
