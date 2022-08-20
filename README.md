@@ -5,7 +5,7 @@
 
 -~ My current conky config [.EN] ~-
 
-:heavy_exclamation_mark:ENGLiSH VERSiON:heavy_exclamation_mark:
+:heavy_exclamation_mark:ENGLiSH OR GERMAN VERSiON:heavy_exclamation_mark:
 
 
 ![Screenshot](Screenshot.png)
@@ -37,7 +37,7 @@ sudo apt-get install conky-all
 
 :point_right: cd MyConkyConf
 
-:point_right: cp -rf conkyrc $HOME/.conkyrc
+:point_right: cp -rf conkyrc $HOME/.conkyrc (FOR GERMAN VERSiON: cp -rf conkyrc_DE $HOME/.conkyrc)
 
 :point_right: cp -rf anonymous.png powered_by_linux.svg.png ip.sh $HOME/.conky
 
