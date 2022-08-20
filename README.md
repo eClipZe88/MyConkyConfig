@@ -3,9 +3,9 @@
 
 
 
--~ My current conky config [.EN] ~-
+-~ My current conky config ~-
 
-:heavy_exclamation_mark:ENGLiSH OR GERMAN VERSiON:heavy_exclamation_mark:
+:heavy_exclamation_mark:ENGLiSH AND GERMAN VERSiON AVAILABLE:heavy_exclamation_mark:
 
 
 ![Screenshot](Screenshot.png)
